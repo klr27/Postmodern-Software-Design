@@ -34,21 +34,20 @@ h1 {
 	font-family: Arial;
 	padding-left: 10px;
 	text-transform: uppercase;
-}
-
-.selection .rank {
 	color: #000000;
 	text-decoration: none;
 }
 
-.selection .title {
-	color: #000000;
-	text-decoration: none;
+.rankPage .rank {
+	text-decoration: underline;
 }
 
-.selection .year {
-	color: #000000;
-	text-decoration: none;
+.titlePage .title {
+	text-decoration: underline;
+}
+
+.yearPage .year {
+	text-decoration: underline;
 }
 
 
