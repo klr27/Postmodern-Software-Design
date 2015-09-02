@@ -8,9 +8,9 @@
 	<div class="selection">
 			<ul>
 				<li>Sort albums by:</li>
-				<li> <a class="rank" href="rank.php">Rank</a> </li>
-				<li> <a class="title" href="title.php">Title</a> </li>
-				<li> <a class="year" href="year.php">Year</a> </li>
+				<li> <a class="rank" href="Project01/rank.php">Rank</a> </li>
+				<li> <a class="title" href="Project01/title.php">Title</a> </li>
+				<li> <a class="year" href="Project01/year.php">Year</a> </li>
 			</ul>
 	</div>
 

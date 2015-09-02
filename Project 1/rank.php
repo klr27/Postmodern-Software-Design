@@ -2,11 +2,11 @@
 <html>
 
 <?php
-	include 'head.php';
+	include 'Project01/head.php';
 ?>
 <body class="rankPage">
 	<?php
-		include 'body.php';
+		include 'Project01/body.php';
 	?>
 
 <table>
@@ -511,7 +511,7 @@
 		<td>1988</td>
 	</tr>
 </table>
-<div>
+</div>
 	
 </body>
 </html>

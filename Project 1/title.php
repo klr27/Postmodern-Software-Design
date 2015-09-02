@@ -1,10 +1,10 @@
 <html>
 <?php
-	include 'head.php';
+	include 'Project01/head.php';
 ?>
 <body class="titlePage">
 	<?php
-		include 'body.php';
+		include 'Project01/body.php';
 	?>
 <table>
 	<tr>
