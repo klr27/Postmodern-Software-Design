@@ -510,5 +510,6 @@
 </table>
 </div>
 	
-</body>
-</html>
+	<?php
+		include 'Project01/footer.php';
+	?>

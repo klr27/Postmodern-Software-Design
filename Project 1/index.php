@@ -6,8 +6,8 @@
 	<?php
 		include 'Project01/body.php';
 	?>
-</body>
-</html>
-
+	<?php
+		include 'Project01/footer.php';
+	?>
 
 
