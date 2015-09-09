@@ -10,7 +10,9 @@
 		include 'table1.php';
 	?>
 
-$sql = "SELECT * FROM albums ORDER BY title;";
+<?php 
+	$sql = "SELECT * FROM albums ORDER BY title;";
+?>
 
 <?php
 		include 'table2.php';

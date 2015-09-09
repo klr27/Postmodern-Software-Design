@@ -1,7 +1,9 @@
 <html>
-<?php
-	include 'Project01/head.php';
-?>
+<head>
+  <link type="text/css" rel="stylesheet" href="/Project01/index.css"/>
+  <title>Top 100 Albums of All Time</title>
+  <meta name="description" context="A list of the top 100 albums of all time, according to Rolling Stone."/>
+</head>
 <body>
 	
 <div id="header">
@@ -23,7 +25,9 @@
     include 'Project01/table1.php';
   ?>
 
-$sql = "SELECT * FROM albums ORDER BY rank;";
+<?php
+  $sql = "SELECT * FROM albums ORDER BY rank;";
+?>
 
 <?php
     include 'Project01/table2.php';
