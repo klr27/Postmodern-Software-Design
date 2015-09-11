@@ -1,23 +1,7 @@
-<html>
-<?php
-	include 'head.php';
-?>
+<?php include 'head.php';?>
 <body class="titlePage">
-	<?php
-		include 'pageSetup.php';
-	?>
-<?php
-		include 'table1.php';
-	?>
-
-<?php 
+<?php	
+	include 'pageSetup.php';
 	$sql = "SELECT * FROM albums ORDER BY title;";
+	include 'footer.php';
 ?>
-
-<?php
-		include 'table2.php';
-	?>
-	
-	<?php
-		include 'footer.php';
-	?>

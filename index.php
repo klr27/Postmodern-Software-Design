@@ -20,21 +20,5 @@
         <li> <a class="year" href="/Project01/year.php">Year</a> </li>
       </ul>
   </div>
-
-<?php
-    include 'Project01/table1.php';
-  ?>
-
-<?php
-  $sql = "SELECT * FROM albums ORDER BY rank;";
-?>
-
-<?php
-    include 'Project01/table2.php';
-  ?>
-  
-
-
-	<?php
-		include 'Project01/footer.php';
-	?>
+</body>
+</html>

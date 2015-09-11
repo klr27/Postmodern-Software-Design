@@ -1,3 +1,4 @@
+<html>
 <head>
 	<link type="text/css" rel="stylesheet" href="index.css"/>
 	<title>Top 100 Albums of All Time</title>
