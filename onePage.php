@@ -1,8 +1,10 @@
 <html>
 <?php
   $sortOrder = $_POST["sortOrder"];
+  if ($sortOrder == NULL) {
+    $sortOrder = "rank";
+  }
 ?>
-
 <head>
   <link type="text/css" rel="stylesheet" href="Project01/index.css"/>
   <title>Top 100 Albums of All Time</title>
@@ -19,10 +21,10 @@
         Ordered by
         <select name="sortOrder">
           <option <? if ($sortOrder == "rank") { ?>selected = "selected"<? } ?>value="rank">Rank</option>
-          <option <? if ($sortOrder == "year") { ?>selected = "selected"<? } ?>value="rank">Year</option>
-          <option <? if ($sortOrder == "title") { ?>selected = "selected"<? } ?>value="rank">Title</option>
+          <option <? if ($sortOrder == "year") { ?>selected = "selected"<? } ?>value="year">Year</option>
+          <option <? if ($sortOrder == "title") { ?>selected = "selected"<? } ?>value="title">Title</option>
+        <input type="submit" value="Sort!"/>
         </select>
-        <input type="sumbit" value="Sort!"/>
       </form>
 
  <table>
@@ -44,7 +46,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM albums ORDER BY " . $sortOrder;
+$sql = "SELECT * FROM albums ORDER BY " . $sortOrder . ";";
  
 $result = $conn->query($sql);
 while($row = $result->fetch_assoc()) {
