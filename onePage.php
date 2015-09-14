@@ -1,10 +1,4 @@
 <html>
-<?php
-  $sortOrder = $_POST["sortOrder"];
-  if ($sortOrder == NULL) {
-    $sortOrder = "rank";
-  }
-?>
 <head>
   <link type="text/css" rel="stylesheet" href="Project01/index.css"/>
   <title>Top 100 Albums of All Time</title>
@@ -18,9 +12,10 @@
       }
     }
     xhr.open("POST", "http://kruppert.humanoriented.com/table.php", true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
-    var sortOrder = document.getElementByID("topAlbums"),value;
-    xhr.send("sortOrder" + sortOrder);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+    var sortOrder = document.getElementById("selector").value;
+    //alert(sortOrder);
+    xhr.send("sortOrder=" + sortOrder);
   }
   </script>
 </head>
@@ -33,12 +28,12 @@
   </div>
       <form action="onePage.php" method="POST">
         Ordered by
-        <select name="sortOrder">
+        <select id="selector" name="sortOrder">
           <option <? if ($sortOrder == "rank") { ?>selected = "selected"<? } ?>value="rank">Rank</option>
           <option <? if ($sortOrder == "year") { ?>selected = "selected"<? } ?>value="year">Year</option>
           <option <? if ($sortOrder == "title") { ?>selected = "selected"<? } ?>value="title">Title</option>
-        <input type="submit" onclick="replaceList(); return false;"/> 
         </select>
+        <input type="submit" onclick="replaceList(); return false;"/> 
       </form>
 <div id="table">
 </div>      
